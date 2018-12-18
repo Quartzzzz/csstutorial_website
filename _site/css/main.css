@@ -26,6 +26,14 @@ a {
   text-decoration: none;
   text-transform: uppercase;
 }
+.header-nav a:hover,
+.header-nav a:active {
+  color: orange;
+}
+.header-logo:hover,
+.header-logo:active {
+  opacity: 0.5;
+}
 
 /*HERO STYLE*/
 .full-hero {
