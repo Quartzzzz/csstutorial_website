@@ -17,6 +17,14 @@ a {
 .header-nav li {
   display: inline-block;
   padding: 5.5vh 60px 0 0;
+  margin-left: 1em;
+  font-weight: bold;
+  font-size: 0.8em;
+}
+.header-nav a {
+  color: black;
+  text-decoration: none;
+  text-transform: uppercase;
 }
 
 /*HERO STYLE*/
