@@ -28,7 +28,13 @@ a {
 }
 .header-nav a:hover,
 .header-nav a:active {
-  color: orange;
+  color: #ed6e2f;
+}
+.header-nav li:first-child a {
+  color: #ed6e2f;
+}
+.header-nav li:first-child a:hover {
+  color: black;
 }
 .header-logo:hover,
 .header-logo:active {
@@ -59,13 +65,14 @@ a {
   color: white;
   display: inline-block;
   margin: auto;
-
+}
+.social-link:hover {
+  background-color: black;
 }
 .social-list {
   list-style: none;
   padding: 0;
   text-align: center;
-
 }
 .social-list > li {
   display: inline-block;
