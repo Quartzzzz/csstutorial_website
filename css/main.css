@@ -72,7 +72,44 @@ a {
 /*HERO STYLE*/
 .full-hero {
   background-color: #c7dbfc;
-  height: 50vh;
+  background-image: url(/images/shark.jpg);
+  background-position: top-center;
+  background-size: cover;
+  box-sizing: border-box;
+  height: 100vh;
+  padding-top: 10vh;
+}
+.full-hero:after {
+  bottom: 2vh;
+  border: 10px solid;
+  border-color: #fff transparent transparent;
+  content: "";
+  height: 0;
+  left: 50%;
+  position: absolute;
+  transform: translate(-50%, 0);
+  width: 0;
+}
+.hero-content {
+  text-align: center;
+  position: relative;
+  text-transform: uppercase;
+  top: 50%;
+  transform: translate(0, -50%);
+  
+}
+.hero-content h1 {
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 7vw;
+  margin-bottom: 0.25em;
+}
+.hero-content .social-link {
+  background-color: rgba(255, 255, 255, 0.8);
+  color: #557c83;
+}
+.hero-content .social-link:hover {
+  background-color: #000;
+  color: #fff;
 }
 
 /*SOCIAL STYLE*/
@@ -92,9 +129,6 @@ a {
   color: white;
   display: inline-block;
   margin: auto;
-}
-.social-link:hover {
-  background-color: black;
 }
 .social-list {
   list-style: none;
