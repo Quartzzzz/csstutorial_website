@@ -1,4 +1,8 @@
 /* GLOBAL STYLE*/
+html {
+  box-shadow: 0 0 0 30px #000 inset;
+  padding: 0 30px;
+}
 body {
   font-family: helvetica, arial, sans;
 }
@@ -11,18 +15,47 @@ a {
 }
 
 /*HEADER STYLE*/
+.header {
+  background-color: #000;
+  color: #fff;
+  position: fixed;
+  width: 100%;
+  z-index: 20;
+
+}
+.header-logo {
+  background-color: #000;
+  box-sizing: border-box;
+  display: block;
+  height: 10vh;
+  padding-top: 10px;
+  position: relative;
+  text-align: center;
+  width: 10vh;
+}
+.header-logo:hover,
+.header-logo:active {
+  background-color: #ed6e2f;
+}
+.header-logo img {
+  width: 4.3vh;
+}
 .header-nav {
   float: right;
-}
-.header-nav > ul > li {
-  display: inline-block;
   padding: 5.5vh 60px 0 0;
+}
+.header-nav > li {
+  display: inline-block;
   margin-left: 1em;
-  font-weight: bold;
-  font-size: 0.8em;
+}
+.header-nav > li ~ li {
+  border-left: 1px solid rgba(255, 255, 255, 0.3);
+  padding-left: 1em;
 }
 .header-nav a {
-  color: black;
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
   text-decoration: none;
   text-transform: uppercase;
 }
@@ -30,27 +63,16 @@ a {
 .header-nav a:active {
   color: #ed6e2f;
 }
-.header-nav > ul > li:first-child a {
+.header-nav > li:first-child a {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a:hover {
-  color: black;
+  color: #fff;
 }
-.header-nav > ul > li + li {
-  border-left: 1px solid rgba(0, 0, 0, 0.3);
-  padding: 1.5em;
-  margin: 1em;
-}
-.header-logo:hover,
-.header-logo:active {
-  opacity: 0.5;
-}
-
 /*HERO STYLE*/
 .full-hero {
   background-color: #c7dbfc;
   height: 50vh;
-  width: 100vw;
 }
 
 /*SOCIAL STYLE*/
