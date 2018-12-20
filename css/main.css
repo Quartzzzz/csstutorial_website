@@ -19,6 +19,11 @@ h1 {
   font-size: 7vw;
   margin-top: : 0;
 }
+h4 {
+  color: #999;
+  font-weight: bold;
+  text-transform: uppercase;
+}
 p {
   line-height: 1.5;
 }
@@ -180,7 +185,6 @@ a {
   color: #fff;
 }
 
-
 /*HOME STYLES*/
 .home-section {
 margin: 6rem auto;
@@ -311,6 +315,22 @@ width: 90vw;
   margin-bottom: 1em;
 }
 
+/*BLOG STYLES*/
+.page {
+  margin: 10vh auto 15vh;
+  max-width: 980px;
+  width: 85vw;
+}
+.col-two {
+  display: flex;
+}
+.col-two .col-aside {
+  flex: 0 0 20em;
+  order: 1;
+}
+.col-two .col-content {
+  flex: 1;
+}
 
 /*MISC STYLES*/
 h2 + p {
