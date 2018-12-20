@@ -5,6 +5,15 @@ html {
 }
 body {
   font-family: helvetica, arial, sans;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.content-container {
+  display: flex;
+  flex: 1 1 auto;
+  padding-top: 10vh;
+  width: 100%;  
 }
 h1 {
   font-size: 7vw;
@@ -100,7 +109,7 @@ a {
 }
 .social-list > li {
   display: inline-block;
-  margin: 1em 0 0.5em;
+  margin: 0 0 0.5em;
 }
 
 /*FOOTER STYLES*/
@@ -132,10 +141,10 @@ a {
 .full-hero {
   background-color: #c7dbfc;
   background-image: url(/images/shark.jpg);
-  background-position: top-center;
+  background-position: center;
   background-size: cover;
   box-sizing: border-box;
-  height: 100vh;
+  height: 90vh;
   padding-top: 10vh;
 }
 .full-hero:after {
@@ -188,14 +197,25 @@ width: 90vw;
   background-color: #000;
   color: #fff;
   padding: 7vh 0;
+  display: flex;
+  align-items: flex-start;
+}
+.home-callout h3 {
+  color: inherit;
+  margin: 1em 0 0.5em;
+  font-weight: bold;
 }
 .callout-title {
-font-size: 5.75vw;
-text-align: right;
-text-transform: uppercase;
+  font-size: 5.75vw;
+  text-align: right;
+  text-transform: uppercase;
+  flex: 1;
+  padding-right: 0.5em;
 }
 .callout-copy {
   font-size: 0.8em;
+  flex: 0 0 45em;
+  padding: 0.3vw;
 }
 
 /*BIO STYLES*/ 
@@ -232,6 +252,63 @@ text-transform: uppercase;
 .bio-copy {
   font-size: 0.75em;
   line-height: 1.5;
+}
+
+/*GALLERY STYLES */
+.col {
+  box-sizing: border-box;
+  padding: 2em;
+}
+.col-three {
+  display: flex;
+  flex: 1;
+}
+.col-three .col ~ .col {
+  border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+.col-three .col-nav {
+  flex: 0 1 15em;
+}
+.col-three .col-content {
+  flex: 1;
+}
+.col-three .col-aside {
+  flex: 0 1 20em;
+}
+.gallery-thumbs {
+  height: 90vh;
+  overflow: scroll;
+}
+.gallery-thumbs > div {
+  cursor: pointer;
+}
+.gallery-thumbs img {
+  box-sizing: border-box;
+  box-shadow: 0 0 0 5px transparent;
+  display: inline-block;
+  margin: 0 0 10px;
+  opacity: 0.5;
+  transition: opacity 0.5s ease-in-out;
+  width: 100%;
+}
+.gallery-thumbs img:hover {
+  opacity: 1;
+}
+.gallery-thumbs .current img {
+  box-shadow: 0 0 10px 3px #6397b5;
+  opacity: 1;
+}
+.gallery-photo {
+  position: relative;
+}
+.gallery-photo img {
+  width: 100%;
+}
+.gallery-info {
+  font-size: 0.8rem;
+}
+.gallery-info h3 {
+  margin-bottom: 1em;
 }
 
 
