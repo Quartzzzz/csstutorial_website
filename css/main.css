@@ -10,10 +10,13 @@ h1 {
   font-size: 7vw;
   margin-top: : 0;
 }
-a {
-  color: red;
+p {
+  line-height: 1.5;
 }
-
+a {
+  color: #6397b5;
+  text-decoration: none;
+}
 /*HEADER STYLE*/
 .header {
   background-color: #000;
@@ -52,24 +55,53 @@ a {
   border-left: 1px solid rgba(255, 255, 255, 0.3);
   padding-left: 1em;
 }
-.header-nav a {
-  color: #fff;
-  font-size: 0.8rem;
-  font-weight: bold;
-  text-decoration: none;
-  text-transform: uppercase;
-}
-.header-nav a:hover,
-.header-nav a:active {
-  color: #ed6e2f;
-}
 .header-nav > li:first-child a {
   color: #ed6e2f;
 }
 .header-nav > li:first-child a:hover {
   color: #fff;
 }
-/*HERO STYLE*/
+
+/*NAV STYLES*/
+.nav-links a {
+  color: #fff;
+  font-size: 0.8rem;
+  font-weight: bold;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+.nav-links a:hover,
+.nav-links a:active {
+  color: #ed6e2f;
+}
+
+
+/*FOOTER STYLES*/
+.footer {
+  background-color: #000;
+  padding: 10vh 0 15vh;
+  text-align: center;
+}
+.footer-logo img {
+  width: 50px;
+}
+.footer h3 {
+  text-transform: uppercase;
+  color: #fff;
+  padding-top: 1.5em;
+}
+.footer h3 span {
+  color: #aaa;
+}
+.footer-nav li {
+  display: inline-block;
+  margin: 2em 1em 0;
+}
+.footer-nav a {
+  color: #ccc;
+}
+
+/*HERO STYLES*/
 .full-hero {
   background-color: #c7dbfc;
   background-image: url(/images/shark.jpg);
@@ -165,6 +197,7 @@ text-transform: uppercase;
 .callout-copy {
   font-size: 0.8em;
 }
+
 /*BIO STYLES*/ 
 .bio-wrapper {
   font-size: 24px;
@@ -173,34 +206,34 @@ text-transform: uppercase;
   max-width: 960px;
 } 
 .bio-box {
-  border: 1px solid black;
   float: left;
-  width: 23%;
-  padding: 2%;
+  width: 33%;
+  padding: 0 3%;
   font-size: 1rem;
   box-sizing: border-box;
   margin: 40px 1% 50px;
+  margin: 0 0 6rem;
 }
 .bio-box .social-link {
   display: block;
-  margin: 2em 0 1em;
+  margin: 2em auto 1em;
 }
 .bio-box h3 {
-  color: rgba(255, 100, 50, 0.9);
+  color: rgba(255, 255, 255, 0.9);
   font-size: 1.5em;
+  text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
   margin: -40px 0 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 .bio-box img {
   width: 100%;
 }
 .bio-copy {
-  font-size: 1em;
+  font-size: 0.75em;
   line-height: 1.5;
 }
-.bio-copy a {
-  color: green;
-}
+
 
 /*MISC STYLES*/
 h2 + p {
