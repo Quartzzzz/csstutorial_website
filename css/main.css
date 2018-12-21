@@ -199,8 +199,19 @@ a {
   width: 90vw;
 }
 .home-section h2 {
+  margin-bottom: 1.5rem;
   text-align: center;
-  margin-bottom: 1.5rem; 
+}
+.home-section h4 {
+  margin-bottom: 0.5em;
+  text-align: center;
+}
+.home-section .post-header {
+  text-align: center;
+}
+.home-section .blog-posts {
+  margin: auto;
+  width: 75%;
 }
 
 /*CALLOUT STYLES*/
@@ -344,9 +355,11 @@ a {
   font-size: 3em;
   margin-bottom: 1em;
   text-align: center;
+  text-transform: uppercase;
 }
 .page h2 {
   margin-bottom: 0.5em;
+  font-size: 1.5em,
 }
 .page h4 {
   margin-bottom: 1em;
@@ -380,6 +393,10 @@ a {
 }
 .post-header {
   margin-bottom: 1.5em;
+}
+.post-header h2 {
+  font-size: 1.5em;
+  margin-top: 1.5em;
 }
 .post-header img,
 .post-header .social-link {
