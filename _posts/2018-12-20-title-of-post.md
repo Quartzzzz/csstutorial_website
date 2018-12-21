@@ -1,6 +1,6 @@
 ---
 layout: post
-title: This is the title of the post
+title: Melville's Moby Dick First Lines
 postHero: /images/shark.jpg
 author: Me, Myself, and I
 authorTwitter: http://twitter.com/mhartl
