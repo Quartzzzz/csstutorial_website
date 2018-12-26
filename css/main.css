@@ -464,6 +464,9 @@ a {
     box-shadow: none;
     padding: 0;
   }
+  .blog-recent {
+    display: none;
+  }
 }
 @media (max-width: 600px) {
   /*HERO STYLES */
@@ -489,20 +492,14 @@ a {
   }
 
   /* BLOG STYLES */
-  .blog-cols {
-    flex-direction: column-reverse;
-  }
-  .post-aside {
-    float: none;
-    margin: auto;
-    text-align: center;
-    padding: 4em 2em;
-  }
-  .page h1 {
-    margin: 0.5em 0 0;
-  }
   .blog-previews {
     padding: 0;
+  }
+  .post-aside {
+    display: none;
+  }
+  .img-blog {
+    width: 10em;
   }
 
   /* HOME STYLES */
