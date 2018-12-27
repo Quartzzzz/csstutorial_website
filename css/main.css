@@ -4,7 +4,7 @@ html {
   padding: 0 30px;
 }
 body {
-  font-family: helvetica, arial, sans;
+  font-family: "Open Sans", helvetica, arial, sans;
   display: flex;
   flex-direction: column;
   min-height: 100vh;
@@ -15,9 +15,10 @@ body {
   padding-top: 10vh;
   width: 100%;  
 }
-h1 {
+h1,h2,h3,h4,h5,h6 {
   font-size: 7vw;
   margin-top: : 0;
+  font-family: "Raleway", helvetica
 }
 h2 + p {
   font-size: 0.8em;
@@ -113,7 +114,9 @@ a {
   position: relative;
 }
 .dropdown:hover .drop-menu {
-  display: block;
+  display: block; 
+  /* reveal the drop menu when hovering over "BLOG" 
+  (see .drop-menu rule) */
 }
 .dropdown:hover .drop-trigger:after {
   border-color: #ed6e2f transparent transparent;
