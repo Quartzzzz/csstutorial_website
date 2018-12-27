@@ -4,6 +4,21 @@
   {% else %}
     <title>Test Page: Don't Panic</title>
   {% endif %}
+  {% if page.description %}
+    <meta name="description" content="{{ page.description }}">
+  {% else %}
+    <meta name="description" content="This is a dangerous site.">
+  {% endif %}
+	{% if page.description %}
+    <meta property="og:title" content="{{ page.title }}">
+  {% else %}
+    <meta property="og:title" content="This is a dangerous site.">
+  {% endif %}
+	{% if page.description %}
+    <meta property="og:description" content="{{ page.description }}">
+  {% else %}
+    <meta property="og:description" content="This is a dangerous site.">
+  {% endif %}
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="icon" type="text/css" href="/favicon.png">
   <meta charset="utf-8">
