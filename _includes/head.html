@@ -1,5 +1,9 @@
 <head>
-  <title>Test Page: Don't Panic</title>
+  {% if page.title %}
+    <title>{{ page.title }} | Test Page</title>
+  {% else %}
+    <title>Test Page: Don't Panic</title>
+  {% endif %}
   <link rel="apple-touch-icon" href="/apple-touch-icon.png">
   <link rel="icon" type="text/css" href="/favicon.png">
   <meta charset="utf-8">
