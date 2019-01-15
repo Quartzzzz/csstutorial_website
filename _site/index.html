@@ -1,20 +1,48 @@
 <!DOCTYPE html>
 <html>
   <head>
+  
     <title>Test Page: Don't Panic</title>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" href="/css/reset.css">
-    <link rel="stylesheet" type="text/css" href="/css/main.css">
-  </head>
+  
+  
+    <meta name="description" content="This is a dangerous site.">
+  
+	
+    <meta property="og:title" content="This is a dangerous site.">
+  
+	
+    <meta property="og:description" content="This is a dangerous site.">
+  
+  <link rel="apple-touch-icon" href="/apple-touch-icon.png">
+  <link rel="icon" type="text/css" href="/favicon.png">
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+	<link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:100|Sarabun:500" rel="stylesheet">
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="/css/reset.css">
+  <link rel="stylesheet" type="text/css" href="/css/main.css">
+</head>
   <body>
     <header class="header">
 	<nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>		
 		<ul class="header-nav nav-links">
-					<li><a href="/">Home</a></li>			
-			<li><a href="/gallery">Gallery</a></li>
-			<li><a href="/blog">Blog</a></li>
-			<li><a href="/2018/12/21/title-of-post.html">Newest Post</a></li>			
+		<li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2018/12/21/title-of-post.html">Homer's Odyssey First Lines</a></li>
+    
+      <li><a href="/2018/12/20/title-of-post.html">Melville's Moby Dick First Lines</a></li>
+    
+  </ul>
+</li>
+<li><a href="/2018/12/21/title-of-post.html">Newest Post</a></li>
+			
 		</ul>
 	</nav>
 	<a href="/" class="header-logo">
@@ -29,14 +57,20 @@
   	  <h1>CODE DANGEROUSLY</h1>
   	  <ul class="social-list">
   	  	<li>
-  <a href="http://example.com/" class="social-link">FB</a>
-</li>
-<li>
-  <a href="http://example.com/" class="social-link">TW</a>
-</li>
-<li>
-  <a href="http://example.com/" class="social-link">GH</a>
-</li>
+          <a href="https://facebook.com/learnenough" class="social-link">
+            <i class="fa fa-facebook"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://twitter.com/learnenough" class="social-link">
+            <i class="fa fa-twitter"></i>
+          </a>
+        </li>
+        <li>
+          <a href="https://github.com/learnenough" class="social-link">
+            <i class="fa fa-github"></i>
+          </a>
+        </li>
   	  </ul>
   	</div>
   </div>
@@ -83,7 +117,9 @@
         <div class="post-byline">
           <img src="http://www.gravatar.com/avatar/3b3be63a4c2a439b013787725dfce802?d=identicon">
           <a href="http://twitter.com/mhartl"
-          class="social-link">Tw</a>
+          class="social-link">
+            <i class="fa fa-twitter"></i>
+          </a>
           by: Quentin Mazet
           <span> - December 21, 2018</span>
         </div>
@@ -110,7 +146,7 @@
         <img src="http://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="http://twitter.com/mhartl" class="social-link">
-          TW
+          <i class="fa fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -134,7 +170,7 @@
         <img src="http://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">
-          TW
+          <i class="fa fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -149,7 +185,7 @@
         <img src="http://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">
-          TW
+          <i class="fa fa-twitter"></i>
         </a>
         <div class="bio-copy">
           <p>
@@ -170,10 +206,21 @@
   </a>
   <nav>
   	<ul class="footer-nav nav-links">
-  					<li><a href="/">Home</a></li>			
-			<li><a href="/gallery">Gallery</a></li>
-			<li><a href="/blog">Blog</a></li>
-			<li><a href="/2018/12/21/title-of-post.html">Newest Post</a></li>			
+  		<li><a href="/">Home</a></li>
+<li><a href="/gallery">Gallery</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2018/12/21/title-of-post.html">Homer's Odyssey First Lines</a></li>
+    
+      <li><a href="/2018/12/20/title-of-post.html">Melville's Moby Dick First Lines</a></li>
+    
+  </ul>
+</li>
+<li><a href="/2018/12/21/title-of-post.html">Newest Post</a></li>
+			
   	</ul>
   </nav>
   <h3>Learn Enough <span>to Be Dangerous</span></h3>
