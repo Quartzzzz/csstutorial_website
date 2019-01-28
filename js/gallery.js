@@ -7,8 +7,13 @@ function activateGallery() {
 
   thumbnails.forEach(function(thumbnail) {
     thumbnail.addEventListener("click", function() {
+	    // Preload large images.
+	    let newImageSrc  = thumbnail.dataset.largeVersion;
+	    let largeVersion = new Image();
+	    largeVersion.src = newImageSrc
+
       // Set clicked image as main image.
-      let newImageSrc = thumbnail.dataset.largeVersion;
+      
       mainImage.setAttribute("src", newImageSrc);
       // Set corresponding alt for main image
       let newImgAlt = thumbnail.alt;
@@ -21,7 +26,7 @@ function activateGallery() {
       let galleryInfo = document.querySelector("#gallery-info");
       let title       = galleryInfo.querySelector(".title");
       let description = galleryInfo.querySelector(".description");
-      
+
       title.innerHTML       = thumbnail.dataset.title;
       description.innerHTML = thumbnail.dataset.description;
     });
